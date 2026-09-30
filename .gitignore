@@ -1,0 +1,35 @@
+# Visual Studio e arquivos locais
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Compilação, publicação e instaladores gerados
+[Bb]in/
+[Oo]bj/
+AppPackages/
+Carriola-Distribuicao/
+TestResults/
+*.appx
+*.appxbundle
+*.msix
+*.msixbundle
+*.appxsym
+*.msixupload
+*.appxupload
+*-Setup.exe
+*.log
+
+# Chaves privadas e credenciais
+*.pfx
+*.p12
+*.snk
+*.key
+.env
+.env.*
+*.pubxml.user
+
+# Arquivos locais do Windows
+Thumbs.db
+Desktop.ini

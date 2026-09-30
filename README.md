@@ -1,9 +1,24 @@
 # Carriola Images Converter — versão 1.0
 
-> Estado do repositório: a documentação da versão 1.0 já está disponível. O código-fonte completo e o instalador ainda serão adicionados.
+> Código-fonte do aplicativo para Windows e scripts de geração do instalador. O Setup.exe compilado ainda não foi publicado neste repositório.
 
 
 Aplicativo desktop para Windows, desenvolvido em C# com .NET 8, WinUI 3 e Magick.NET, para converter imagens individualmente ou em lote. O projeto não utiliza Python.
+
+## Abrir no Visual Studio
+
+1. Baixe ou clone este repositório.
+2. No Visual Studio com as ferramentas de desenvolvimento WinUI instaladas, escolha **Abrir um projeto ou uma solução** e abra **CarriolaConverter.csproj**. Não é necessário um arquivo de solução para abrir este projeto.
+3. Aguarde a restauração dos pacotes NuGet e selecione a plataforma **x64**. A biblioteca de conversão incluída no projeto é Magick.NET-Q16-x64.
+4. Compile e execute no Windows. Para usar o modo empacotado MSIX em outra máquina, selecione ou crie um certificado de desenvolvimento no Visual Studio. O certificado pessoal usado pelo autor não acompanha o repositório.
+
+## Gerar o instalador
+
+Com o Visual Studio, as ferramentas WinUI e o Inno Setup instalados no Windows, execute **Distribuicao/Gerar-Instalador.cmd**. O gerador verifica o compilador do Inno Setup, publica em Release x64, obtém o componente Visual C++ oficial e monta o Setup.exe. A primeira geração precisa de acesso à internet.
+
+O resultado fica em uma pasta **Carriola-Distribuicao**, ao lado da pasta do projeto, dentro de uma subpasta com data e hora. Para alterar a versão do próximo instalador, edite **Distribuicao/Versao.txt**.
+
+O instalador tradicional não usa a chave privada de teste MSIX. Arquivos de certificado, configurações pessoais do Visual Studio, saídas de compilação e instaladores gerados estão excluídos pelo arquivo .gitignore.
 
 ## Conversão e controle da fila
 
