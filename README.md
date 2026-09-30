@@ -1,9 +1,15 @@
-# Carriola Images Converter — versão 1.0
+# Carriola Images Converter — versão 1.0.0
 
-> Código-fonte do aplicativo para Windows e scripts de geração do instalador. O Setup.exe compilado ainda não foi publicado neste repositório.
+> Instalador para Windows x64 disponível na [versão 1.0.0](https://github.com/n456k7z4wy-hash/Carriola-Images-Converter/releases/tag/v1.0.0). Este repositório também contém o código-fonte e os scripts para gerar novas versões.
 
 
 Aplicativo desktop para Windows, desenvolvido em C# com .NET 8, WinUI 3 e Magick.NET, para converter imagens individualmente ou em lote. O projeto não utiliza Python.
+
+## Baixar e instalar
+
+Abra a [página da versão 1.0.0](https://github.com/n456k7z4wy-hash/Carriola-Images-Converter/releases/tag/v1.0.0) e, na seção **Assets**, baixe **Carriola-Images-Converter-1.0.0-x64-Setup.exe**. Execute o arquivo e siga o assistente em português. O usuário final não precisa instalar o Visual Studio.
+
+O arquivo SHA-256 disponível na mesma página permite conferir a integridade do instalador. Enquanto o repositório for privado, o download exige uma conta com permissão de acesso.
 
 ## Abrir no Visual Studio
 
@@ -86,4 +92,3 @@ Esses resultados correspondem aos testes manuais relatados pelo autor. Não repr
 - A prévia é limitada a 2048 pixels no maior lado e não substitui uma inspeção em resolução nativa de imagens maiores.
 - As preferências e os perfis são restaurados ao reabrir; a fila de arquivos não é restaurada.
 - As atualizações do aplicativo são instaladas executando uma nova versão do Setup.exe; esta versão não possui atualização automática.
-
