@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CarriolaConverter (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "CarriolaConverter (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
